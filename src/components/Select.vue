@@ -541,7 +541,9 @@
 
       validate: {
         type: Function,
-        default: val => true,
+        default: function(val){
+          return true;
+        }
       },
 
       /**
